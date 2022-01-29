@@ -1,0 +1,93 @@
+@use "variables" as f;
+@use 'body' as b;
+@use 'mixins' as mixins;
+
+$body-bg-color: #4ab1ec; 
+
+// .header-title { 
+//   color: f.$sda-color; 
+// } 
+
+body{
+  background-color: $body-bg-color;
+}
+
+.short-note{
+  @include mixins.ellipsis(200px);
+}
+
+.sda-input{
+  @include mixins.placeholder{
+    font-weight: bold;
+    color: rgb(117, 212, 73);
+  }
+}
+
+
+.sda-navbar{
+  position:relative;
+  width: 100%;
+  background-color: f.$navbar-bg-color;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    li{
+      float: left;
+
+      a{
+        &:link,
+        &:visited{
+          display:block;
+          width: 150px;
+          padding: 8px;
+          color: f.$navbar-color;
+          background-color: f.$navbar-bg-color;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        &:hover,
+        &:active{
+          background-color: f.$sda-color;
+        }
+      }
+    }
+  }
+}
+
+.sda-button {
+  border: 1px solid red;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sda-submit-button{
+  @extend .sda-button;
+  background-color: green;
+  color: white;
+}
+
+%sda-button1{
+  border: 1em solid black;
+  padding: 10px 10px;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px red solid;
+  }
+}
+
+.sda-form-button{
+  @extend %sda-button1;
+  background-color: blue;
+  color: yellow;
+}

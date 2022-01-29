@@ -1,0 +1,130 @@
+body {
+  background-color: #00aff0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader-wrapper {
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+}
+
+.loader {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, 0px, 0px);
+          transform: translate3d(-50%, 0px, 0px);
+  -webkit-filter: url("#goo");
+          filter: url("#goo");
+}
+
+.loader span {
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  -webkit-transform-origin: 0 60px 0;
+          transform-origin: 0 60px 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2500ms;
+          animation-duration: 2500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.74, 0.23, 0.1, 0.95);
+          animation-timing-function: cubic-bezier(0.74, 0.23, 0.1, 0.95);
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+}
+
+.pip-1 {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.pip-2 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.pip-3 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.pip-4 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.pip-5 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.pip-6 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    width: 20px;
+    height: 20px;
+  }
+}
+/*# sourceMappingURL=loading.css.map */

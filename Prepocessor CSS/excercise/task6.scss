@@ -1,0 +1,15 @@
+@use 'variables' as v;
+
+@each $icon-size in v.$icon-sizes {
+  .icon-#{v.$icon-size}{
+    font-size: v.$icon-size;
+    height: v.$icon-size;
+    width: v.$icon-size;
+  }
+}
+
+// @each $color in v.$n-child-colors{
+//   ul:nth-child(#(list.index(v.$nth-child-colors,$color)){
+//     background-color:$color
+//   }
+// }

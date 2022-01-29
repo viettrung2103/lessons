@@ -1,0 +1,73 @@
+@mixin placeholder { 
+  &:-moz-placeholder { 
+    @content; 
+  } 
+  &::-moz-placeholder { 
+    @content; 
+  } 
+  &::-webkit-input-placeholder { 
+    @content; 
+  } 
+  &:-ms-input-placeholder { 
+    @content; 
+  } 
+}
+
+@mixin ellipsis($max-width: 300px) { //provide default 
+  display: inline-block;            // values of max
+  max-width: $max-width;            // width of 300px
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin center($direction) { 
+  position: absolute; 
+ 
+  @if $direction == "both" { 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    -webkit-transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%); 
+    -moz-transform: translate(-50%, -50%); 
+  } @else if $direction == "vertical" { 
+    top: 50%; 
+    transform: translateY(-50%); 
+    -webkit-transform: translateY(-50%); 
+    -ms-transform: translateY(-50%); 
+    -moz-transform: translate(-50%, -50%); 
+  } @else if $direction == "horizontal" { 
+    left: 50%; 
+    transform: translate(-50%); 
+    -webkit-transform: translateX(-50%); 
+    -ms-transform: translateX(-50%); 
+    -moz-transform: translate(-50%, -50%); 
+  } 
+} 
+
+@mixin linear-gradient($direction, $gradients...) {  // the ... at the end help put infinite number of $gradients as arguments to mixin
+  background: linear-gradient($direction, $gradients); 
+  background: -webkit-linear-gradient($direction, $gradients); 
+  background: -moz-linear-gradient($direction, $gradients); 
+  background: -ms-linear-gradient($direction, $gradients); 
+} 
+
+@mixin box1($width,$height){
+  width: $width ;
+  height: $height ;
+}
+
+@mixin absolute-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+  
+@mixin font-size($size) {
+  font-size: $size;
+  line-height: $size * 1.5;
+  letter-spacing: normal;
+}

@@ -1,0 +1,85 @@
+body {
+  background-color: #4ab1ec;
+}
+
+.short-note {
+  display: inline-block;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sda-input:-moz-placeholder {
+  font-weight: bold;
+  color: #75d449;
+}
+.sda-input::-moz-placeholder {
+  font-weight: bold;
+  color: #75d449;
+}
+.sda-input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #75d449;
+}
+.sda-input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #75d449;
+}
+
+.sda-navbar {
+  position: relative;
+  width: 100%;
+  background-color: #661570;
+}
+.sda-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.sda-navbar ul li {
+  float: left;
+}
+.sda-navbar ul li a:link, .sda-navbar ul li a:visited {
+  display: block;
+  width: 150px;
+  padding: 8px;
+  color: #fff;
+  background-color: #661570;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+.sda-navbar ul li a:hover, .sda-navbar ul li a:active {
+  background-color: #55125e;
+}
+
+.sda-button, .sda-submit-button {
+  border: 1px solid red;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sda-submit-button {
+  background-color: green;
+  color: white;
+}
+
+.sda-form-button {
+  border: 1em solid black;
+  padding: 10px 10px;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+.sda-form-button:hover {
+  border: 2px red solid;
+}
+
+.sda-form-button {
+  background-color: blue;
+  color: yellow;
+}

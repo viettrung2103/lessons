@@ -1,0 +1,77 @@
+$pip: 20px;
+$small-pip: $pip / 2;
+$loader-size: $pip*6;
+$duration: 2500;
+
+body {
+  background-color: #00aff0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-wrapper {
+  position: relative;
+    text-align: center;
+    width: 300px;
+  height: 300px;
+}
+
+.loader {
+    border-radius: 50%;
+    height: $loader-size;
+    width: $loader-size;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, 0px, 0px);
+    filter:url('#goo');
+}
+
+.loader span {
+  position: absolute;
+  left: 50%;
+  width: $pip;
+  height: $pip;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  transform-origin: 0 $loader-size/2 0;
+  animation-fill-mode: forwards;
+  animation-duration: #{$duration}ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.74,.23,.1,.95);
+  animation-name: rotate;
+}
+
+@for $i from 1 through 6 {
+  $delay: ((($i - 1) * 20) * 3) * ($duration / 1500);
+  .pip-#{$i} {
+    animation-delay: #{$delay}ms;
+  }
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+      width: $pip;
+      height: $pip;
+    }
+    50% {
+      width: $small-pip;
+      height: $small-pip;
+    }
+    100% {
+      
+      transform: rotate(360deg);
+      width: $pip;
+      height: $pip;
+    }
+}
