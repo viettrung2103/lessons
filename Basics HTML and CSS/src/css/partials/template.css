@@ -1,0 +1,306 @@
+/* These styles are applied to all elements on the page */
+* {
+  /*
+    border-box sizing means all padding and border will be added to the content size
+    to determine the total size of container.
+    This makes container sizing a lot easier for developers and prevents unintentional/unwanted overflows
+  */
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+/*
+  We can define global css variables inside the :root selector.
+  Theses variables can then be accessed in any other file/page using the var() operator.
+  By convention, variable names should start with --
+*/
+:root {
+  /*
+    colors in css can be a keyword (e.g red, blue), a hexadecimal (e.g #1A2F3C, #000000),
+    an RGB (e.g rgb(12, 223, 255)) or an RGBA value (e.g rgba(0, 0, 0, 0.5))
+  */
+  --primary-green: lightgreen;
+  --secondary-green: #18a888;
+  --default-blue: #00bfff;
+  --primary-blue: #0e779b;
+  --primary-yellow: gold;
+  --secondary-yellow: goldenrod;
+  --primary-red: tomato;
+  --primary-white: white;
+  --secondary-white: #fbfbfb;
+  --primary-grey: #eee;
+  --secondary-grey: #bbb;
+  --secondary-blue: rgb(12, 25, 39);
+  --primary-black: rgb(22, 35, 49);
+  --secondary-black: rgb(10, 25, 41);
+  --info-color: #777;
+  --default-radius: 2px;
+  --default-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  --vertical-shadow: 3px 0 6px rgba(0, 0, 0, 0.1);
+  --sidebar-width: 60px;
+  --body-padding-width: 80px;
+}
+
+/*
+  We can reference/target elements in css in 3 main ways
+  - by their tag name (e.g a, p, h1, div)
+  - by their id (e.g #sidebar, #menuButton). Note that a # prefix is added to the id name
+  - by their class (e.g .brandName, .selectedMenu). Note that a . prefix is added to the class name
+
+  NOTE:
+  - id values must be unique per page. You should not have more than 1 element on a given page with same id. You can however use the same id on multiple pages although this is not advisable unless necessary
+  - class names do not have to be unique per page. In fact a class name should not be unique, it should be applied to at least 2 elements on a given page. If there's only one element on the page with a given class name, it would make more sense to convert the class to an id
+*/
+a {
+  /* Anchor/link elements are underlined by default. This removes the default decoration */
+  text-decoration: none;
+}
+
+body {
+  /* Most browsers apply a default margin around the body element. This is usually undesirable, so we override with a 0 margin */
+  margin: 0;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: var(--sidebar-width);
+}
+
+/* HEADER  */
+header {
+  width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-grey);
+  z-index: 100;
+  padding: 10px 5%;
+  animation: headerAnimation 1s;
+}
+
+/*
+  Keyframes are used for animating elements.
+  We will talk more about animations and keyframes in next modules
+*/
+@keyframes headerAnimation {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+header div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header p.brandName {
+  margin-bottom: 0;
+}
+
+header img {
+  border-radius: 20px;
+}
+
+header i {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+header i:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* SIDEBAR */
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: var(--sidebar-width);
+  background-color: var(--secondary-blue);
+  box-shadow: var(--vertical-shadow);
+}
+
+nav a {
+  cursor: pointer;
+  color: var(--secondary-grey);
+  margin: 10px 0;
+}
+
+.selectedMenu {
+  color: var(--primary-green);
+  cursor: default;
+}
+
+#themeToggler {
+  position: absolute;
+  bottom: 10px;
+  font-size: 25px;
+  color: var(--secondary-green);
+  z-index: 500;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: var(--primary-black);
+  color: var(--secondary-grey);
+  padding: 40px 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+footer div {
+  min-width: 280px;
+}
+
+footer div div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.brandName {
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.brandName span {
+  margin-right: 5px;
+  color: var(--primary-green);
+}
+
+footer div div span {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h5 {
+  margin: 15px;
+  margin-left: 0;
+  margin-top: 20px;
+  color: var(--info-color);
+}
+
+footer a {
+  cursor: pointer;
+  color: var(--secondary-grey);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 280px;
+}
+
+footer form input:not(#subscribe) {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-left: 2px solid var(--primary-red);
+  border-radius: var(--default-radius);
+  text-align: center;
+  /* transition: all 0.1s ease-out; */
+}
+
+/* input:not(#subscribe):hover { border-left: 8px solid var(--primary-green); }
+input:not(#subscribe):focus { box-shadow: 0 0 15px 10px var(--primary-green) inset; }
+input:not(#subscribe):invalid {
+  box-shadow: var(--default-shadow);
+  border-left: 2px solid var(--primary-red);
+}
+input:not(#subscribe):invalid:hover { border-left: 8px solid var(--primary-red); }
+input:not(#subscribe):invalid:focus { box-shadow: 0 0 15px 10px var(--primary-red) inset; } */
+
+#subscribe {
+  margin: 20px 0;
+  width: 300px;
+  padding: 8px;
+  text-align: center;
+  border-radius: var(--default-radius);
+  background-image: linear-gradient(to left, var(--primary-green), var(--secondary-green));
+  cursor: pointer;
+}
+
+#copy {
+  position: absolute;
+  left: 5%;
+  bottom: 10px;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fullScaleVideo {
+  width: 100%;
+  height: 40vh;
+}
+
+i{
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+i:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+/*
+  Media queries are used in responsive web design to ensure our web applications look good and
+  are usable on all targeted devices sizes (mobile phones, tablets, smart tv, laptops etc).
+  We will talk more about media queries in next modules
+*/
+@media screen and (max-width: 770px) {
+  #sidebar {
+    display: none;
+  }
+  header {
+    display: flex;
+  }
+  body {
+    padding-left: 0;
+  }
+}

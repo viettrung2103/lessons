@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+	<Head>
+		<title>SDA Training - Home</title>
+
+		<meta charset='utf-8' />
+		<meta name='author' content='Mbomndih Munang <dzedock@yahoo.com> (https://bomdisoft.com)' />
+		<meta name='keywords' content='Software development, academy, training, html, css, javascript' />
+		<meta name='description' content='Introduction to html, css and javascript' />
+		<meta name='viewport' content='width: device-width, minimum-scale=1.0, initial-scale=1.0' />
+		<meta name='theme-color' content='#1888a8' />
+
+		<link rel='stylesheet' href='./css/index.css' />
+		<link id='themeLink' rel='stylesheet' href='./css/themes/dark.css' />
+		<link rel='icon' type='image/x-icon' href='./favicon.ico' />
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous' />
+
+		<script src='./js/template.js' defer></script>
+		<script src='./js/subscribe.js' defer></script>
+	</Head>
+	<body>
+		<noscript>
+      This page relies on Javascript.
+      For optimal functionality and user experience, please enable Javascript or switch to a browser that supports it!
+    </noscript>
+
+		<!-- Page header -->
+		<header>
+			<div>
+        <img src='./static/images/logo.png' alt="company logo" width="35" height="35">
+        <p class='brandName'><span>SDA</span>Training</p>
+			</div>
+      <i id='menuButton' class='fas fa-bars'></i>
+		</header>
+
+		<nav id='sidebar'>
+			<a href='#' class='selectedMenu' title='Home'>
+				<i class='fas fa-home'></i>
+			</a>
+			<a href='./HTML/blog.html' title='Blog'>
+				<i class='fas fa-blog'></i>
+			</a>
+			<a href='./HTML/calculator.html' title='Calculator'>
+				<i class='fas fa-calculator'></i>
+			</a>
+			<a href='./HTML/register.html' title='Account'>
+				<i class='fas fa-user-circle'></i>
+			</a>
+			<!-- Theme toggler -->
+      <i id='themeToggler' title='Toggle theme' class='fas fa-toggle-off'></i>
+		</nav>
+
+		<!-- Page content -->
+    <main>
+      <iframe class='fullScaleVideo' src='https://www.youtube.com/embed/rrT6v5sOwJg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+
+      <section>
+        <div id='basicInfo'>
+          <img src='./static/images/quantum.jpg' alt='Profile picture of Adombang Munang Mbomndih'>
+          <div>
+            <h4>Adombang Munang Mbomndih</h4>
+            <p>Full-stack Javascript Developer</p>
+            <small>bomdi-munang@outlook.com</small>
+            <small>+372 57575757</small>
+            <a href='https://bomdisoft.com'>bomdisoft.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h4>Lists</h4>
+        <div id='listHolder'>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis recusandae itaque ipsum.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati magnam non, rem, facilis dolores quos!</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium laborum nulla omnis aliquam iste?</li>
+          </ul>
+          <ol>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tenetur consectetur adipisci asperiores quisquam.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla quam nisi doloribus optio a maiores fuga.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus maxime necessitatibus quos repudiandae .</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id='tableSection'>
+        <h4>Tables</h4>
+        <table>
+          <caption>Table of CSS selectors</caption>
+          <thead>
+            <tr>
+              <th>Selector</th>
+              <th>Example</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>*</td>
+              <td>*</td>
+              <td>Selects all elements</td>
+            </tr>
+            <tr>
+              <td>.class</td>
+              <td>.menu</td>
+              <td>Selects all elements with class='menu'</td>
+            </tr>
+            <tr>
+              <td>#id</td>
+              <td>#submit</td>
+              <td>Selects all elements with id='submit'</td>
+            </tr>
+            <tr>
+              <td>element</td>
+              <td>p</td>
+              <td>Selects all &lt;p&gt; elements</td>
+            </tr>
+            <tr>
+              <td>element, element</td>
+              <td>div, p</td>
+              <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+            </tr>
+            <tr>
+              <td>element element</td>
+              <td>div p</td>
+              <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button>Click Me</button>
+      </section>
+    </main>
+
+		<!-- Page footer -->
+		<footer>
+			<div>
+				<p class='brandName'><span>SDA</span>Training</p>
+				<div>
+					<span>
+						<h5>COMPANY</h5>
+						<a href='#'>About</a>
+						<a href='#'>Contact Us</a>
+						<a href='#'>Terms of Service</a>
+						<a href='#'>Privacy Policy</a>
+					</span>
+					<span>
+						<h5>SUPPORT</h5>
+						<a href='#'>Help</a>
+						<a href='#'>Documentation</a>
+						<a href='#'>Customer Service</a>
+					</span>
+				</div>
+			</div>
+			<form action='#'>
+				<h5>Subscribe to newsletters</h5>
+				<input type='text' id='name' placeholder='name' maxlength='50' pattern='[a-zA-Z\s]{2,}' required />
+				<input type='email' id='email' placeholder='email' required />
+				<small id='error'></small>
+				<input type='submit' id='subscribe' value='Subscribe' />
+			</form>
+			<small id='copy'>Copyright &copy; 2021</small>
+		</footer>
+	</body>
+</html>
