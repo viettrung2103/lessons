@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link CSS bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Link JS bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <title>Document</title>
+</head>
+<body>
+ 
+  <div class="container">
+    This is a container
+    <br>
+    There is padding of left and right side
+    <br>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
+
+  <div class="container-fluid">
+    This is container fluid
+    <br>
+    It take the whole screen width
+    <br>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
+
+  <div class="container">
+    This is alert inside container class.
+    <div class="alert alert-dark" role="alert">
+      A simple dark alert—check it out!
+    </div>
+  </div>
+<br>
+  <div class="container-fluid">
+    This is alert inside container-fluid
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert—check it out!
+    </div>
+  </div>
+<br>
+<p>These container is for small devide</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm alert-dark">
+      1 of 2
+    </div>
+    <div class="col-sm alert-warning">
+      2 of 2
+    </div>
+  </div>
+</div>
+<p>These container is for medium devide</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 alert-dark">
+      1 of 2
+    </div>
+    <div class="col-md-8 alert-warning">
+      2 of 2
+    </div>
+  </div>
+</div>
+<p>These container is for large devide</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg alert-dark">
+      1 of 2
+    </div>
+    <div class="col-lg alert-warning">
+      2 of 2
+    </div>
+  </div>
+</div>
+<p>These container is for medium devide</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xl alert-dark">
+      1 of 2
+    </div>
+    <div class="col-xl alert-warning">
+      2 of 2
+    </div>
+  </div>
+</div>
+<p>These column with differt width</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-8 alert-dark">
+        Small: 12 Medium: 6 Large: 8
+    </div>
+    <div class="col-6 col-md-4 alert-success">
+        Small: 6 Large: 4
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2  alert-dark">
+        2 column wide
+    </div>
+    <div class="col-4  alert-danger ">
+        4 column wide
+    </div>
+    <div class="col-6 alert-info ">
+        6 column wide
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 alert-dark">.col-md-4</div>
+    <div class="col-md-2 offset-md-2 alert-success">.col-md-2 .offset-md-2</div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 alert-dark">.col-md-4</div>
+    <div class="col-md-4 offset-md-4 alert-success">.col-md-4 .offset-md-4</div>
+  </div>
+</div>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores inventore rerum odit laboriosam veritatis eos aperiam nihil hic, reprehenderit praesentium necessitatibus asperiores, totam ex in molestias ratione libero ducimus aliquam?</p>
+
+<div class="row">
+  <!-- 4 collumn wide allign on right -->
+  <div class="col-4 order-2  alert-dark">1st comment</div> 
+   <!-- 3 collumn wide allign on left -->
+  <div class="col-3 order-1  alert-danger">2nd comment </div>
+   <!-- 2 collumn wide allign on left -->
+  <div class="col-2 order-1  alert-info">3rd comment</div>
+   <!-- 1 collumn wide allign on left -->
+  <div class="col-1 order-1  alert-success">4th comment</div>
+  <!-- 1 collumn wide allign on right -->
+  <div class="col-1 order-2  alert-success">5th comment</div>
+</div>
+<br>
+
+</body>
+</html>
