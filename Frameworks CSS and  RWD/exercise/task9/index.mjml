@@ -1,0 +1,85 @@
+<mjml>
+  <mj-body>
+    <mj-raw>
+      <!-- Company Header -->
+    </mj-raw>
+    <mj-section background-color="#2A5CAB">
+      <mj-column width="150px">
+        <mj-image width="150px" src="https://i.postimg.cc/T1bLdSd4/logo.png" padding-left="5px"></mj-image>
+      </mj-column>
+      <mj-column width="400px">
+        <mj-text font-size="20px" font-family="Verdana, san-serif" color="#ffffff" padding="13px 10px">The only way to travel</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Image Header -->
+    </mj-raw>
+    <mj-section background-color="#ffffff" padding-bottom="0px">
+      <mj-column>
+        <mj-image width="200px" src="https://i.postimg.cc/7YvJsxX8/ticket.png"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Introduction Text -->
+    </mj-raw>
+    <mj-section background-color="#ffffff" padding-top="0px">
+      <mj-column>
+        <mj-text align="center" font-weight="bold" font-size="30px" color="#FAB701">Hey!</mj-text>
+        <mj-text align="center" font-weight="bold" font-size="25px" color="#FAB701">It's been a long time since you last traveled with us.</mj-text>
+        <mj-text align="center" font-size="18px" color="#EC652D" padding="10px 42px">Have a look at some of the top destinations people are booking right now!</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Icons -->
+    </mj-raw>
+    
+    <!--Icons does not stack with each other -->
+    <mj-section background-color="#ffffff" padding-top="0px">
+      <mj-group>
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/W18D10VT/new-york.png"></mj-image>
+          <mj-text align="center" font-weight="bold" font-size="25px" color="#EC652D" padding="0px">New York</mj-text>
+          <mj-text padding-bottom="20px" align="center" font-weight="bold" font-size="15px">$399</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/52bYJnZs/london.png"></mj-image>
+          <mj-text align="center" font-weight="bold" font-size="25px" color="#EC652D" padding="0px">London</mj-text>
+          <mj-text padding-bottom="20px" align="center" font-weight="bold" font-size="15px">$399</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/nzC95r6Z/berlin.png"></mj-image>
+          <mj-text align="center" font-weight="bold" font-size="25px" color="#EC652D" padding="0px">Berlin</mj-text>
+          <mj-text padding-bottom="20px" align="center" font-weight="bold" font-size="15px">$399</mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    
+    <!--Icon DOES stack with each other-->
+    <mj-section background-color="#ffffff" padding-top="0px">
+      <mj-column>
+        <mj-image src="https://i.postimg.cc/W18D10VT/new-york.png"></mj-image>
+        <mj-text align="center" font-weight="bold" font-size="25px" color="#EC652D" padding="0px">New York</mj-text>
+        <mj-text padding-bottom="20px" align="center" font-weight="bold" font-size="15px">$399</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="https://i.postimg.cc/52bYJnZs/london.png"></mj-image>
+        <mj-text align="center" font-weight="bold" font-size="25px" color="#EC652D" padding="0px">London</mj-text>
+        <mj-text padding-bottom="20px" align="center" font-weight="bold" font-size="15px">$399</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="https://i.postimg.cc/nzC95r6Z/berlin.png"></mj-image>
+        <mj-text align="center" font-weight="bold" font-size="25px" color="#EC652D" padding="0px">Berlin</mj-text>
+        <mj-text padding-bottom="20px" align="center" font-weight="bold" font-size="15px">$399</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Footer -->
+    </mj-raw>
+    <mj-section background-color="#FAB701">
+      <mj-column>
+        <mj-text align="center" font-size="25px" color="#EC652D" padding="0px">Best,</mj-text>
+        <mj-text align="center" font-size="25px" color="#EC652D" padding="0px">World Travel Agency</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
